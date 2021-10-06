@@ -25,25 +25,26 @@
           <!-- About -->
           <li class="nav-item {% if page.title == 'about' %}active{% endif %}">
             <a class="nav-link" href="{{ '/' | relative_url }}">
-              about
+              About
               {% if page.title == "about" %}
                 <span class="sr-only">(current)</span>
               {% endif %}
             </a>
           </li>
-          {% if site.blog_name %}
+          <!-- {% if site.blog_name %} -->
           <!-- Blog -->
-          <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/blog/' | relative_url }}">
-              blog
-              {% if page.title == "blog" %}
-              <span class="sr-only">(current)</span>
-              {% endif %}
-            </a>
-          </li>
+          <!-- <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}"> -->
+            <!-- <a class="nav-link" href="{{ '/blog/' | relative_url }}"> -->
+              <!-- blog -->
+              <!-- {% if page.title == "blog" %} -->
+              <!-- <span class="sr-only">(current)</span> -->
+              <!-- {% endif %} -->
+            <!-- </a> -->
+          <!-- </li> -->
           {% endif %}
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: "title" %}
+          <!-- {% assign sorted_pages = site.pages | sort: "title" %} -->
+          {% assign sorted_pages = site.pages | sort: "order" %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
           {% if p.dropdown %}

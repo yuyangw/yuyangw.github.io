@@ -1,11 +1,14 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: Materials for courses you taught. Replace this text with your description.
 nav: true
+order: 3
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+- Head Teaching Assistant, Carnegie Mellon University <BR/>
+<a href="https://baratilab.github.io/24789spring21/">24-789: Deep Learning for Engineers</a>, Spring 2021
 
-Organize your courses by years, topics, or universities, however you like!
+- Head Teaching Assistant, Carnegie Mellon University <BR/>
+<a href="https://baratilab.github.io/24789spring21/">24-789: Deep Learning for Engineers</a>, Spring 2020 
