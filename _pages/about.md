@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-description: <b>PhD@CMU | Molecular Machine Learning | ✉ <a href="mailto:yuyangw@cmu.edu"> yuyangw@cmu.edu</a></b>
+description: <b>PhD@CMU | Molecular Machine Learning
 
 profile:
   align: right
