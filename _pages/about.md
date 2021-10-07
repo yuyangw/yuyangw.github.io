@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Home
-permalink: 
+permalink: /home/
 description: <b>PhD@CMU | Molecular Machine Learning
 
 profile:
