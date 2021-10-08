@@ -6,7 +6,7 @@ nav: true
 order: 4
 ---
 
-Department of Mechanical Engineering, Carnegie Mellon University<BR/>
+Wean Hall 4212, Carnegie Mellon University<BR/>
 5000 Forbes Avenue, Pittsburgh, PA 15213
 
 Email: <a href="mailto:yuyangw@cmu.edu">yuyangw@cmu.edu</a>

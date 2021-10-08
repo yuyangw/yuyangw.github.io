@@ -6,7 +6,7 @@ description: <b>PhD@CMU | Molecular Machine Learning
 
 profile:
   align: right
-  image: me.jpg
+  image: me.png
   # address: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
