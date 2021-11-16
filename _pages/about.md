@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: <b>PhD@CMU | Molecular Machine Learning
+description: <b>PhD@CMU | Molecular Machine Learning | <a href="mailto:yuyangw@cmu.edu">yuyangw@cmu.edu</a>
 
 profile:
   align: right
@@ -21,7 +21,7 @@ order: 1
 
 I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, abvised by Prof. <a href="https://www.meche.engineering.cmu.edu/directory/bios/barati-farimani-amir.html">Amir Barati Farimani</a>. Meanwhile, I am also pursuing a M.S. in Machine Learning at <a href="https://www.cs.cmu.edu/">CMU School of Computer Science</a>. Previously, I obtained my B.Eng. from <a href="https://en.tongji.edu.cn/index.htm">Tongji University</a>. 
 
-<!-- You can also download my <a href="#">[CV]</a>. -->
+You can also download my <a href="/assets/pdf/Yuyang_Wang_Resume.pdf">[CV]</a>.
 
 <b>Research Interest: </b>
 - Machine Learning
@@ -29,4 +29,4 @@ I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/"
 - Molecular Dynamics
 - Nanotechnology
 
-My research lies at the intersection of machine learning, molecular dynamics, and drug discovery. I am interested in developing machine learning methods to better understand and explore the molecular dynamics. I am also developing self-supervised molecular machine learning methods to learn generic representations that generalize on various down-stream applications. These data-driven techniques are implemented to estimate unknown bio-interactions between compounds and biological targets (e.g., proteins) for efficient <i>in silico</i> drug design and discovery. 
+My research lies at the intersection of machine learning, drug discovery, and molecular dynamics. I am especially interested in developing self-supervised molecular machine learning methods to learn generic representations that generalize on chemical space. I believe data-driven techniques bear promise for efficient <i>in silico</i> drug design and discovery. 
