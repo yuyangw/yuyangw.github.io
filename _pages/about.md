@@ -21,7 +21,7 @@ order: 1
 
 I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, abvised by Prof. <a href="https://www.meche.engineering.cmu.edu/directory/bios/barati-farimani-amir.html">Amir Barati Farimani</a>. Meanwhile, I am also pursuing a M.S. in Machine Learning at <a href="https://www.cs.cmu.edu/">CMU School of Computer Science</a>. Previously, I obtained my B.Eng. from <a href="https://en.tongji.edu.cn/index.htm">Tongji University</a>. 
 
-You can also download my <a href="/assets/pdf/Yuyang_Wang_Resume.pdf">[CV]</a>.
+You can also download my <a href="/assets/pdf/Yuyang_Wang_Resume.pdf">[CV]</a> (last updated Dec 2021).
 
 <b>Research Interest: </b>
 - Machine Learning

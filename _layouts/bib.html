@@ -4,8 +4,8 @@
 <div class="row">
   <div class="col-sm-3">
   {% if entry.abbr %}
-    <!-- <img class="img-fluid" src="{{ site.data.pubimg[entry.abbr] | prepend: '/assets/pubimg/' | relative_url }}" style="width:200px;"> -->
-    <img class="img-fluid" src="{{ site.data.pubimg[entry.abbr] | prepend: '../../assets/pubimg/' }}" style="width:200px;">
+    <img class="img-fluid" src="{{ site.data.pubimg[entry.abbr] | prepend: '/assets/pubimg/' | relative_url }}" style="width:200px;">
+    <!-- <img class="img-fluid" src="{{ site.data.pubimg[entry.abbr] | prepend: '../../assets/pubimg/' }}" style="width:200px;"> -->
     {% endif %}
   </div>
 
@@ -24,29 +24,35 @@
           {% endif %}
           {% if forloop.length == 1 %}
             {% if author_is_self %}
-              <em>{{author.last}}, {{author.first}}</em>
+              <!-- <em>{{author.last}}, {{author.first}}</em> -->
+              <em>{{author.first}} {{author.last}}</em>
             {% else %}
-              {{author.last}}, {{author.first}}
+              <!-- {{author.last}}, {{author.first}} -->
+              <em>{{author.first}} {{author.last}}</em>
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>,
+                <!-- <em>{{author.last}}, {{author.first}}</em>, -->
+                <em>{{author.first}} {{author.last}}</em>,
               {% else %}
                 {% if site.data.coauthors[author.last] %}
                   <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
                 {% else %}
-                  {{author.last}}, {{author.first}},
+                  <!-- {{author.last}}, {{author.first}}, -->
+                  {{author.first}} {{author.last}},
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author_is_self %}
-                and <em>{{author.last}}, {{author.first}}</em>
+                <!-- and <em>{{author.last}}, {{author.first}}</em> -->
+                and <em>{{author.first}} {{author.last}}</em>
               {% else %}
                 {% if site.data.coauthors[author.last] %}
                   and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
                 {% else %}
-                  and {{author.last}}, {{author.first}}
+                  <!-- and {{author.last}}, {{author.first}} -->
+                  and {{author.first}} {{author.last}}
                 {% endif %}
               {% endif %}
             {% endunless %}
