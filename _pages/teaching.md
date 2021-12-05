@@ -4,7 +4,7 @@ permalink: /teaching/
 title: Teaching
 # description: Materials for courses you taught. Replace this text with your description.
 nav: true
-order: 3
+order: 4
 ---
 
 - Head Teaching Assistant, Carnegie Mellon University <BR/>

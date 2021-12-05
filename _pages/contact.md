@@ -3,7 +3,7 @@ layout: page
 permalink: /contact/
 title: Contact
 nav: true
-order: 4
+order: 5
 ---
 
 Wean Hall, Department of Mechanical Engineering,<BR/>
