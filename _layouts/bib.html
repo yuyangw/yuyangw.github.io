@@ -76,14 +76,14 @@
     {% endif %}
 
     <div class="links">
+    {% if entry.html %}
+      <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Paper</a>
+    {% endif %}
     {% if entry.arxiv %}
       <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">arXiv</a>
     {% endif %}
-    {% if entry.bioRxiv %}
-      <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">bioRxiv</a>
-    {% endif %}
-    {% if entry.html %}
-      <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Paper</a>
+    {% if entry.biorxiv %}
+      <a href="{{ entry.biorxiv }}" class="btn btn-sm z-depth-0" role="button" target="_blank">biorxiv</a>
     {% endif %}
     {% if entry.pdf %}
       {% if entry.pdf contains '://' %}

@@ -3,43 +3,59 @@
 
 @string{acs = {Americam Chemical Society,}}
 
-@article{wang2021molclr,
-  abbr={2021molclr},
-  title={MolCLR: Molecular Contrastive Learning of Representations via Graph Neural Networks},
-  author={Wang, Yuyang and Wang, Jianren and Cao, Zhonglin and Farimani, Amir Barati},
-  journal={arXiv preprint arXiv:2102.10056},
-  year={2021},
-  html={https://arxiv.org/abs/2102.10056},
-  pdf={https://arxiv.org/pdf/2102.10056.pdf}
+@article{wang2022molclr,
+  abbr={2022molclr},
+  title={Molecular Contrastive Learning of Representations via Graph Neural Networks},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Wang, Jianren and Cao, Zhonglin and Farimani, Amir Barati},
+  journal={Nature Machine Intelligence},
+  year={2022},
+  html={https://www.nature.com/articles/s42256-022-00447-x},
+  arxiv={2102.10056},
+  pdf={https://www.nature.com/articles/s42256-022-00447-x.pdf},
+  code={https://github.com/yuyangw/MolCLR},
+  abstract={Molecular machine learning bears promise for efficient molecular property prediction and drug discovery. However, labelled molecule data can be expensive and time consuming to acquire. Due to the limited labelled data, it is a great challenge for supervised-learning machine learning models to generalize to the giant chemical space. Here we present MolCLR (Molecular Contrastive Learning of Representations via Graph Neural Networks), a self-supervised learning framework that leverages large unlabelled data (~10 million unique molecules). In MolCLR pre-training, we build molecule graphs and develop graph-neural-network encoders to learn differentiable representations. Three molecule graph augmentations are proposed: atom masking, bond deletion and subgraph removal. A contrastive estimator maximizes the agreement of augmentations from the same molecule while minimizing the agreement of different molecules. Experiments show that our contrastive learning framework significantly improves the performance of graph-neural-network encoders on various molecular property benchmarks including both classification and regression tasks. Benefiting from pre-training on the large unlabelled database, MolCLR even achieves state of the art on several challenging benchmarks after fine-tuning. In addition, further investigations demonstrate that MolCLR learns to embed molecules into representations that can distinguish chemically reasonable molecular similarities.}
+}
+
+@article{wang2022improving,
+  abbr={2022imolclr},
+  title={Improving Molecular Contrastive Learning via Faulty Negative Mitigation and Decomposed Fragment Contrast},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Magar, Rishikesh and Liang, Chen and Farimani, Amir Barati},
+  journal={arXiv preprint arXiv:2202.09346},
+  year={2022},
+  arxiv={2202.09346},
+  pdf={https://arxiv.org/pdf/2202.09346.pdf},
+  abstract={Deep learning has been a prevalence in computational chemistry and widely implemented in molecule property predictions. Recently, self-supervised learning (SSL), especially contrastive learning (CL), gathers growing attention for the potential to learn molecular representations that generalize to the gigantic chemical space. Unlike supervised learning, SSL can directly leverage large unlabeled data, which greatly reduces the effort to acquire molecular property labels through costly and time-consuming simulations or experiments. However, most molecular SSL methods borrow the insights from the machine learning community but neglect the unique cheminformatics (e.g., molecular fingerprints) and multi-level graphical structures (e.g., functional groups) of molecules. In this work, we propose iMolCLR: improvement of Molecular Contrastive Learning of Representations with graph neural networks (GNNs) in two aspects, (1) mitigating faulty negative contrastive instances via considering cheminformatics similarities between molecule pairs; (2) fragment-level contrasting between intra- and inter-molecule substructures decomposed from molecules. Experiments have shown that the proposed strategies significantly improve the performance of GNN models on various challenging molecular property predictions. In comparison to the previous CL framework, iMolCLR demonstrates an averaged 1.3% improvement of ROC-AUC on 7 classification benchmarks and an averaged 4.8% decrease of the error on 5 regression benchmarks. On most benchmarks, the generic GNN pre-trained by iMolCLR rivals or even surpasses supervised learning models with sophisticated architecture designs and engineered features. Further investigations demonstrate that representations learned through iMolCLR intrinsically embed scaffolds and functional groups that can reason molecule similarities.}
 }
 
 @article{magar2021auglichem,
   abbr={2021auglichem},
   title={AugLiChem: Data Augmentation Library of Chemical Structures for Machine Learning},
-  author={Magar*, Rishikesh and Wang*, Yuyang and Lorsung*, Cooper and Liang, Chen and Ramasubramanian, Hariharan and Li, Peiyuan and Farimani, Amir Barati},
+  author={Magar*, Rishikesh and <b><i>Wang*</i></b>, <b><i>Yuyang</i></b> and Lorsung*, Cooper and Liang, Chen and Ramasubramanian, Hariharan and Li, Peiyuan and Farimani, Amir Barati},
   journal={arXiv preprint arXiv:2111.15112},
   year={2021},
-  html={https://arxiv.org/abs/2111.15112},
+  arxiv={2111.15112},
   pdf={https://arxiv.org/pdf/2111.15112.pdf},
-  code={https://github.com/BaratiLab/AugLiChem}
+  code={https://github.com/BaratiLab/AugLiChem},
+  abstract={Machine learning (ML) has demonstrated the promise for accurate and efficient property prediction of molecules and crystalline materials. To develop highly accurate ML models for chemical structure property prediction, datasets with sufficient samples are required. However, obtaining clean and sufficient data of chemical properties can be expensive and time-consuming, which greatly limits the performance of ML models. Inspired by the success of data augmentations in computer vision and natural language processing, we developed AugLiChem: the data augmentation library for chemical structures. Augmentation methods for both crystalline systems and molecules are introduced, which can be utilized for fingerprint-based ML models and Graph Neural Networks (GNNs). We  show that using our augmentation strategies significantly improves the performance of ML models, especially when using GNNs. In addition, the augmentations that we developed can be used as a direct plug-in module during training and have demonstrated the effectiveness when implemented with different GNN models through the AugliChem library. The Python-based package for our implementation of Auglichem: Data augmentation library for chemical structures, is publicly available at: https://github.com/BaratiLab/AugLiChem.}
 }
 
 @article{yoon2021deep,
   abbr={2021catgym},
   title={Deep Reinforcement Learning for Predicting Kinetic Pathways to Surface Reconstruction in a Ternary Alloy.},
-  author={Yoon, Junwoong and Cao, Zhonglin and Raju, Rajesh and Wang, Yuyang and Burnley, Robert and Gellman, Andrew J and Farimani, Amir Barati and Ulissi, Zachary W},
+  author={Yoon, Junwoong and Cao, Zhonglin and Raju, Rajesh and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Burnley, Robert and Gellman, Andrew J and Farimani, Amir Barati and Ulissi, Zachary W},
   journal={Machine Learning: Science and Technology},
   year={2021},
   publisher={IOP Publishing},
   code={https://github.com/ulissigroup/catgym},
   html={https://iopscience.iop.org/article/10.1088/2632-2153/ac191c},
-  pdf={https://iopscience.iop.org/article/10.1088/2632-2153/ac191c/pdf}
+  pdf={https://iopscience.iop.org/article/10.1088/2632-2153/ac191c/pdf},
+  abstract={The majority of computational catalyst design focuses on the screening of material components and alloy composition to optimize selectivity and activity for a given reaction. However, predicting the metastability of the alloy catalyst surface at realistic operating conditions requires an extensive sampling of possible surface reconstructions and their associated kinetic pathways. We present CatGym, a deep reinforcement learning (DRL) environment for predicting the thermal surface reconstruction pathways and their associated kinetic barriers in crystalline solids under reaction conditions. The DRL agent iteratively changes the positions of atoms in the near-surface region to generate kinetic pathways to accessible local minima involving changes in the surface compositions. We showcase our agent by predicting the surface reconstruction pathways of a ternary Ni3Pd3Au2(111) alloy catalyst. Our results show that the DRL agent can not only explore more diverse surface compositions than the conventional minima hopping method, but also generate the kinetic surface reconstruction pathways. We further demonstrate that the kinetic pathway to a global minimum energy surface composition and its associated transition state predicted by our agent is in good agreement with the minimum energy path predicted by nudged elastic band calculations.}
 }
 
 @article{wang2021efficient,
   abbr={2021grapheneRL},
   title={Efficient Water Desalination with Graphene Nanopores Obtained using Artificial Intelligence},
-  author={Wang*, Yuyang and Cao*, Zhonglin and Farimani, Amir Barati},
+  author={<b><i>Wang*</i></b>, <b><i>Yuyang</i></b> and Cao*, Zhonglin and Farimani, Amir Barati},
   journal={npj 2D Materials and Applications},
   volume={5},
   number={1},
@@ -48,36 +64,41 @@
   publisher={Nature Publishing Group},
   code={https://github.com/BaratiLab/Graphene-RL},
   html={https://www.nature.com/articles/s41699-021-00246-9},
+  arxiv={2101.07399},
   pdf={https://www.nature.com/articles/s41699-021-00246-9.pdf},
-  media={https://phys-org.cdn.ampproject.org/c/s/phys.org/news/2021-10-ai-world.amp}
+  media={https://phys-org.cdn.ampproject.org/c/s/phys.org/news/2021-10-ai-world.amp},
+  abstract={Two-dimensional nanomaterials, such as graphene, have been extensively studied because of their outstanding physical properties. Structure and topology of nanopores on such materials can be important for their performances in real-world engineering applications, like water desalination. However, discovering the most efficient nanopores often involves a very large number of experiments or simulations that are expensive and time-consuming. In this work, we propose a data-driven artificial intelligence (AI) framework for discovering the most efficient graphene nanopore for water desalination. Via a combination of deep reinforcement learning (DRL) and convolutional neural network (CNN), we are able to rapidly create and screen thousands of graphene nanopores and select the most energy-efficient ones. Molecular dynamics (MD) simulations on promising AI-created graphene nanopores show that they have higher water flux while maintaining rival ion rejection rate compared to the normal circular nanopores. Irregular shape with rough edges geometry of AI-created pores is found to be the key factor for their high water desalination performance. Ultimately, this study shows that AI can be a powerful tool for nanomaterial design and screening.}
 }
 
 @inproceedings{wang2021aril,
   abbr={2021aril},
   title={Adversarially Robust Imitation Learning},
-  author={Wang, Jianren and Zhuang, Ziwen and Wang, Yuyang and Zhao, Hang},
+  author={Wang, Jianren and Zhuang, Ziwen and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Zhao, Hang},
   booktitle={5th Annual Conference on Robot Learning},
   year={2021},
   html={https://openreview.net/forum?id=9aVCUv3nKBg},
-  pdf={https://openreview.net/pdf?id=9aVCUv3nKBg}
+  pdf={https://openreview.net/pdf?id=9aVCUv3nKBg},
+  abstract={Modern imitation learning (IL) utilizes deep neural networks (DNNs) as function approximators to mimic the policy of the expert demonstrations. However, DNNs can be easily fooled by subtle noise added to the input, which is even non-detectable by humans. This makes the learned agent vulnerable to attacks, especially in IL where agents can struggle to recover from the errors. In such light, we propose a sound Adversarially Robust Imitation Learning (ARIL) method. In our setting, an agent and an adversary are trained alternatively. The former with adversarially attacked input at each timestep mimics the behavior of an online expert and the latter learns to add perturbations on the states by forcing the learned agent to fail on choosing the right decisions. We theoretically prove that ARIL can achieve adversarial robustness and evaluate ARIL on multiple benchmarks from DM Control Suite. The result reveals that our method (ARIL) achieves better robustness compare with other imitation learning methods under both sensory attack and physical attack.}
 }
 
 @article{wang2020bio,
   abbr={2020peptidegan},
   title={Bio-informed Protein Sequence Generation for Multi-class Virus Mutation Prediction},
-  author={Wang, Yuyang and Yadav, Prakarsh and Magar, Rishikesh and Farimani, Amir Barati},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Yadav, Prakarsh and Magar, Rishikesh and Farimani, Amir Barati},
   journal={bioRxiv},
   year={2020},
   publisher={Cold Spring Harbor Laboratory},
-  bioRxiv={https://www.biorxiv.org/content/10.1101/2020.06.11.146167v1.abstract},
-  pdf={https://www.biorxiv.org/content/biorxiv/early/2020/06/12/2020.06.11.146167.full.pdf}
+  biorxiv={https://www.biorxiv.org/content/10.1101/2020.06.11.146167v1.abstract},
+  pdf={https://www.biorxiv.org/content/biorxiv/early/2020/06/12/2020.06.11.146167.full.pdf},
+  abstract={Viral pandemics are emerging as a serious global threat to public health, like the recent outbreak of COVID-19. Viruses, especially those belonging to a large family of +ssRNA viruses, have a high possibility of mutating by inserting, deleting, or substituting one or multiple genome segments. It is of great importance for human health worldwide to predict the possible virus mutations, which can effectively avoid the potential second outbreak. In this work, we develop a GAN-based multi-class protein sequence generative model, named ProteinSeqGAN. Given the viral species, the generator is modeled on RNNs to predict the corresponding antigen epitope sequences synthesized by viral genomes. Additionally, a Graphical Protein Autoencoder (GProAE) built upon VAE is proposed to featurize proteins bioinformatically. GProAE, as a multi-class discriminator, also learns to evaluate the goodness of protein sequences and predict the corresponding viral species. Further experiments show that our ProteinSeqGAN model can generate valid antigen protein sequences from both bioinformatics and statistics perspectives, which can be promising predictions of virus mutations.}
 }
 
 @article{mullicklearning,
   abbr={2020emsr},
   title={Learning Super-Resolution Electron Density Map of Proteins using 3D U-Net},
-  author={Mullick, Baishali and Wang, Yuyang and Yadav, Prakarsh and Farimani, Amir Barati},
+  author={Mullick, Baishali and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Yadav, Prakarsh and Farimani, Amir Barati},
   year={2020},
   journal={Machine Learning for Structural Biology Workshop at NeurIPS},
-  pdf={https://www.mlsb.io/papers/MLSB2020_Learning_Super-Resolution_Electron_Density.pdf}
+  pdf={https://www.mlsb.io/papers/MLSB2020_Learning_Super-Resolution_Electron_Density.pdf},
+  abstract={A well-established protein structure is essential for understanding protein molecular mechanism, phenotypic implication and drug discovery. Recent development of cryo-Electron Microscopy (cryo-EM) offers the advantage of easy sample preparation and not requiring crystallized protein for structural biology. However, the resolution of cryo-EM electron density maps used to determine protein structure, is not at par with X-ray diffraction (XRD) or NMR. In this work, we propose to leverage a deep learning-based model to increase the resolution of low-quality electron density maps. The model is built upon U-Net with 3D convolutional layers, which contains three components: encoder, bottleneck, and decoder. To get paired maps of different resolutions, we collect high-resolution maps from XRD as ground truth labels. While the low-resolution maps are obtained through a noise model which combines dilation operations, Gaussian filters and Gaussian noise. We also introduce data augmentation techniques during model training, like random cropping, rotation, and flipping. Experiments show that when applied to low-resolution electron maps, the U-Net model can improve the resolution in the metric of EMRinger score, which redesigns the map so that it resolves the regions of ambiguity to offer greater certainty in the position of amino acids. }
 }
