@@ -3,6 +3,41 @@
 
 @string{acs = {Americam Chemical Society,}}
 
+@article{wang2022improving,
+  abbr={2022imolclr},
+  title={Improving Molecular Contrastive Learning via Faulty Negative Mitigation and Decomposed Fragment Contrast},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Magar, Rishikesh and Liang, Chen and Farimani, Amir Barati},
+  journal={Journal of Chemical Information and Modeling},
+  year={2022},
+  html={https://pubs.acs.org/doi/full/10.1021/acs.jcim.2c00495},
+  arxiv={2202.09346},
+  pdf={https://arxiv.org/pdf/2202.09346.pdf},
+  code={https://github.com/yuyangw/iMolCLR},
+  abstract={Deep learning has been a prevalence in computational chemistry and widely implemented in molecule property predictions. Recently, self-supervised learning (SSL), especially contrastive learning (CL), gathers growing attention for the potential to learn molecular representations that generalize to the gigantic chemical space. Unlike supervised learning, SSL can directly leverage large unlabeled data, which greatly reduces the effort to acquire molecular property labels through costly and time-consuming simulations or experiments. However, most molecular SSL methods borrow the insights from the machine learning community but neglect the unique cheminformatics (e.g., molecular fingerprints) and multi-level graphical structures (e.g., functional groups) of molecules. In this work, we propose iMolCLR: improvement of Molecular Contrastive Learning of Representations with graph neural networks (GNNs) in two aspects, (1) mitigating faulty negative contrastive instances via considering cheminformatics similarities between molecule pairs; (2) fragment-level contrasting between intra- and inter-molecule substructures decomposed from molecules. Experiments have shown that the proposed strategies significantly improve the performance of GNN models on various challenging molecular property predictions. In comparison to the previous CL framework, iMolCLR demonstrates an averaged 1.2% improvement of ROC-AUC on 8 classification benchmarks and an averaged 10.1% decrease of the error on 6 regression benchmarks. On most benchmarks, the generic GNN pre-trained by iMolCLR rivals or even surpasses supervised learning models with sophisticated architecture designs and engineered features. Further investigations demonstrate that representations learned through iMolCLR intrinsically embed scaffolds and functional groups that can reason molecule similarities.}
+}
+
+@article{yadav2022prediction,
+  abbr={2022gpcr},
+  title={Prediction of GPCR activity using Deep Learning},
+  author={Yadav, Prakarsh and Mollaei, Parisa and Cao, Zhonglin and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Farimani, Amir Barati},
+  journal={Computational and Structural Biotechnology Journal},
+  year={2022},
+  html={https://www.sciencedirect.com/science/article/pii/S2001037022001726?via%3Dihub},
+  pdf={Prediction_of_GPCR_activity_using_Deep_Learning.pdf},
+  abstract={GPCRs are the target for one-third of the FDA-approved drugs, however; the development of new drug molecules targeting GPCRs is limited by the lack of mechanistic understanding of the GPCR structure-activity-function relationship. To modulate the GPCR activity with highly specific drugs and minimal side-effects, it is necessary to quantitatively describe the important structural features in the GPCR and correlate them to the activation state of GPCR. In this study, we developed 3 ML approaches to predict the conformation state of GPCR proteins. Additionally, we predict the activity level of GPCRs based on their structure. We leverage the unique advantages of each of the 3 ML approach, interpretability of XGBoost, minimal feature engineering for 3D convolutional neural network, and graph representation of protein structure for graph neural network. By using these ML approaches, we are able to predict the GPCRs activation state with high accuracy (91\%-95\%) and also predict the activation state of GPCRs with low error (MAE of 7.15-10.58). Furthermore, the interpretation of the ML approaches allow us to determine the importance of each of the features in distinguishing between the GPCRs conformations.}
+}
+
+@article{magar2022crystal,
+  abbr={2022crystaltwins},
+  title={Crystal Twins: Self-supervised Learning for Crystalline Material Property Prediction},
+  author={Magar, Rishikesh and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Farimani, Amir Barati},
+  journal={arXiv preprint arXiv:2205.01893},
+  year={2022},
+  arxiv={2205.01893},
+  pdf={https://arxiv.org/pdf/2205.01893.pdf},
+  abstract={Machine learning (ML) models have been widely successful in the prediction of material properties. However, large labeled datasets required for training accurate ML models are elusive and computationally expensive to generate. Recent advances in Self-Supervised Learning (SSL) frameworks capable of training ML models on unlabeled data have mitigated this problem and demonstrated superior performance in computer vision and natural language processing tasks. Drawing inspiration from the developments in SSL, we introduce Crystal Twins (CT): an SSL method for crystalline materials property prediction. Using a large unlabeled dataset, we pre-train a Graph Neural Network (GNN) by applying the redundancy reduction principle to the graph latent embeddings of augmented instances obtained from the same crystalline system. By sharing the pre-trained weights when fine-tuning the GNN for regression tasks, we significantly improve the performance for 7 challenging material property prediction benchmarks.}
+  }
+
 @article{wang2022molclr,
   abbr={2022molclr},
   title={Molecular Contrastive Learning of Representations via Graph Neural Networks},
@@ -13,18 +48,9 @@
   arxiv={2102.10056},
   pdf={https://www.nature.com/articles/s42256-022-00447-x.pdf},
   code={https://github.com/yuyangw/MolCLR},
+  media={https://techxplore.com/news/2022-03-machine-smarter-drug-discovery.html},
+  selected={true},
   abstract={Molecular machine learning bears promise for efficient molecular property prediction and drug discovery. However, labelled molecule data can be expensive and time consuming to acquire. Due to the limited labelled data, it is a great challenge for supervised-learning machine learning models to generalize to the giant chemical space. Here we present MolCLR (Molecular Contrastive Learning of Representations via Graph Neural Networks), a self-supervised learning framework that leverages large unlabelled data (~10 million unique molecules). In MolCLR pre-training, we build molecule graphs and develop graph-neural-network encoders to learn differentiable representations. Three molecule graph augmentations are proposed: atom masking, bond deletion and subgraph removal. A contrastive estimator maximizes the agreement of augmentations from the same molecule while minimizing the agreement of different molecules. Experiments show that our contrastive learning framework significantly improves the performance of graph-neural-network encoders on various molecular property benchmarks including both classification and regression tasks. Benefiting from pre-training on the large unlabelled database, MolCLR even achieves state of the art on several challenging benchmarks after fine-tuning. In addition, further investigations demonstrate that MolCLR learns to embed molecules into representations that can distinguish chemically reasonable molecular similarities.}
-}
-
-@article{wang2022improving,
-  abbr={2022imolclr},
-  title={Improving Molecular Contrastive Learning via Faulty Negative Mitigation and Decomposed Fragment Contrast},
-  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Magar, Rishikesh and Liang, Chen and Farimani, Amir Barati},
-  journal={arXiv preprint arXiv:2202.09346},
-  year={2022},
-  arxiv={2202.09346},
-  pdf={https://arxiv.org/pdf/2202.09346.pdf},
-  abstract={Deep learning has been a prevalence in computational chemistry and widely implemented in molecule property predictions. Recently, self-supervised learning (SSL), especially contrastive learning (CL), gathers growing attention for the potential to learn molecular representations that generalize to the gigantic chemical space. Unlike supervised learning, SSL can directly leverage large unlabeled data, which greatly reduces the effort to acquire molecular property labels through costly and time-consuming simulations or experiments. However, most molecular SSL methods borrow the insights from the machine learning community but neglect the unique cheminformatics (e.g., molecular fingerprints) and multi-level graphical structures (e.g., functional groups) of molecules. In this work, we propose iMolCLR: improvement of Molecular Contrastive Learning of Representations with graph neural networks (GNNs) in two aspects, (1) mitigating faulty negative contrastive instances via considering cheminformatics similarities between molecule pairs; (2) fragment-level contrasting between intra- and inter-molecule substructures decomposed from molecules. Experiments have shown that the proposed strategies significantly improve the performance of GNN models on various challenging molecular property predictions. In comparison to the previous CL framework, iMolCLR demonstrates an averaged 1.3% improvement of ROC-AUC on 7 classification benchmarks and an averaged 4.8% decrease of the error on 5 regression benchmarks. On most benchmarks, the generic GNN pre-trained by iMolCLR rivals or even surpasses supervised learning models with sophisticated architecture designs and engineered features. Further investigations demonstrate that representations learned through iMolCLR intrinsically embed scaffolds and functional groups that can reason molecule similarities.}
 }
 
 @article{magar2021auglichem,
@@ -49,6 +75,7 @@
   code={https://github.com/ulissigroup/catgym},
   html={https://iopscience.iop.org/article/10.1088/2632-2153/ac191c},
   pdf={https://iopscience.iop.org/article/10.1088/2632-2153/ac191c/pdf},
+  media={https://www.marktechpost.com/2021/10/03/cmu-researchers-introduce-catgym-a-deep-reinforcement-learning-drl-environment-for-predicting-kinetic-pathways-to-surface-reconstruction-in-a-ternary-alloy/},
   abstract={The majority of computational catalyst design focuses on the screening of material components and alloy composition to optimize selectivity and activity for a given reaction. However, predicting the metastability of the alloy catalyst surface at realistic operating conditions requires an extensive sampling of possible surface reconstructions and their associated kinetic pathways. We present CatGym, a deep reinforcement learning (DRL) environment for predicting the thermal surface reconstruction pathways and their associated kinetic barriers in crystalline solids under reaction conditions. The DRL agent iteratively changes the positions of atoms in the near-surface region to generate kinetic pathways to accessible local minima involving changes in the surface compositions. We showcase our agent by predicting the surface reconstruction pathways of a ternary Ni3Pd3Au2(111) alloy catalyst. Our results show that the DRL agent can not only explore more diverse surface compositions than the conventional minima hopping method, but also generate the kinetic surface reconstruction pathways. We further demonstrate that the kinetic pathway to a global minimum energy surface composition and its associated transition state predicted by our agent is in good agreement with the minimum energy path predicted by nudged elastic band calculations.}
 }
 
@@ -66,7 +93,7 @@
   html={https://www.nature.com/articles/s41699-021-00246-9},
   arxiv={2101.07399},
   pdf={https://www.nature.com/articles/s41699-021-00246-9.pdf},
-  media={https://phys-org.cdn.ampproject.org/c/s/phys.org/news/2021-10-ai-world.amp},
+  media={https://engineering.cmu.edu/news-events/news/2021/10/20-ai-desalination.html},
   abstract={Two-dimensional nanomaterials, such as graphene, have been extensively studied because of their outstanding physical properties. Structure and topology of nanopores on such materials can be important for their performances in real-world engineering applications, like water desalination. However, discovering the most efficient nanopores often involves a very large number of experiments or simulations that are expensive and time-consuming. In this work, we propose a data-driven artificial intelligence (AI) framework for discovering the most efficient graphene nanopore for water desalination. Via a combination of deep reinforcement learning (DRL) and convolutional neural network (CNN), we are able to rapidly create and screen thousands of graphene nanopores and select the most energy-efficient ones. Molecular dynamics (MD) simulations on promising AI-created graphene nanopores show that they have higher water flux while maintaining rival ion rejection rate compared to the normal circular nanopores. Irregular shape with rough edges geometry of AI-created pores is found to be the key factor for their high water desalination performance. Ultimately, this study shows that AI can be a powerful tool for nanomaterial design and screening.}
 }
 

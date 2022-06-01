@@ -20,15 +20,15 @@ social: true  # includes social icons at the bottom of the page
 order: 1
 ---
 
-I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, where I am advised by Prof. <a href="https://www.meche.engineering.cmu.edu/directory/bios/barati-farimani-amir.html">Amir Barati Farimani</a> and worked on Molecular Machine Learning. Meanwhile, I am also pursuing a M.S. in Machine Learning at CMU School of Computer Science. 
+I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, where I am advised by Prof. <a href="https://www.meche.engineering.cmu.edu/directory/bios/barati-farimani-amir.html">Amir Barati Farimani</a> and working on Molecular Machine Learning. Meanwhile, I am also pursuing a M.S. in Machine Learning at CMU School of Computer Science. 
 
-You can download my <a href="/assets/pdf/Yuyang_Wang_Resume.pdf">CV</a> (last updated March 2022).
+You can download my <a href="/assets/pdf/Yuyang_Wang_CV.pdf">CV</a> (last updated May 2022).
 
 <b>Research Interest: </b>
 - Machine Learning
-- Self-supervised Learning
+- Graph Representation Learning
 - Drug Discovery
 - Cheminformatics
 - Nanotechnology
 
-My research lies at the intersection of machine learning, drug discovery, and cheminformatics. I am especially interested in developing self-supervised molecular machine learning methods to learn generic representations that generalize on chemical space. I believe data-driven techniques bear promise for efficient <i>in silico</i> drug design and discovery. 
+My research lies at the intersection of machine learning, drug discovery, and cheminformatics. I am especially interested in developing self-supervised molecular machine learning methods to learn generic graph representations that generalize on chemical space. I believe data-driven techniques bear promise for efficient <i>in silico</i> drug design and discovery. 

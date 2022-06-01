@@ -53,7 +53,8 @@ gitlab_username: # your GitLab user name
 twitter_username: YuyangW95 # your Twitter handle
 linkedin_username: yuyangwang-1995 # your LinkedIn user name
 scholar_userid: 6eWGKEsAAAAJ&hl # your Google Scholar ID
-orcid_id: 0000-0003-0723-6246 # your ORCID ID
+# orcid_id: 0000-0003-0723-6246 # your ORCID ID
+orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
