@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-description: <b>PhD@CMU • Molecular Machine Learning 
+description: <b>PhD@CMU • AI4Sicence • Molecular Machine Learning 
 # | <a href="mailto:yuyangw@cmu.edu">yuyangw@cmu.edu</a>
 
 profile:
@@ -22,13 +22,13 @@ order: 1
 
 I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, where I am advised by Prof. <a href="https://www.meche.engineering.cmu.edu/directory/bios/barati-farimani-amir.html">Amir Barati Farimani</a> and working on Molecular Machine Learning. Meanwhile, I am also pursuing a M.S. in Machine Learning at CMU School of Computer Science. 
 
-You can download my <a href="/assets/pdf/Yuyang_Wang_CV.pdf">CV</a> (last updated May 2022).
+You can download my <a href="/assets/pdf/Yuyang_Wang_CV.pdf">CV</a> (last updated October 2022).
 
 <b>Research Interest: </b>
 - Machine Learning
 - Graph Representation Learning
+- Molecular Modeling
 - Drug Discovery
-- Cheminformatics
-- Nanotechnology
+- Computational Material
 
-My research lies at the intersection of machine learning, drug discovery, and cheminformatics. I am especially interested in developing self-supervised molecular machine learning methods to learn generic graph representations that generalize on chemical space. I believe data-driven techniques bear promise for efficient <i>in silico</i> drug design and discovery. 
+My research lies at the intersection of machine learning, molecular modeling, and computational chemistry/material. I am especially interested in developing self-supervised molecular machine learning methods to learn generic graph representations that generalize on chemical space. I believe data-driven techniques bear promise for efficient <i>in silico</i> molecule design and discovery. 
