@@ -10,7 +10,7 @@ order: 2
 
 <div class="publications">
 
-My full list of publications can be found on my <a href="https://scholar.google.com/citations?user=6eWGKEsAAAAJ&hl=en">Google Scholar</a> page.
+My full list of publications can be found on <a href="https://scholar.google.com/citations?user=6eWGKEsAAAAJ&hl=en">Google Scholar</a> page.
 
 {% for y in page.years %}
   <h2 class="year">{{y}}</h2>
