@@ -20,13 +20,13 @@ social: true  # includes social icons at the bottom of the page
 order: 1
 ---
 
-<b><i>I am actively looking for full time jobs starting Summer/Fall 2023!</i></b>
+<b><i>I am actively looking for full time jobs starting Summer 2023!</i></b>
 
 I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/">Carnegie Mellon University</a>, where I am advised by Prof. <a href="https://www.meche.engineering.cmu.edu/directory/bios/barati-farimani-amir.html">Amir Barati Farimani</a> and working on Molecular Machine Learning. Meanwhile, I am also pursuing a M.S. in Machine Learning at CMU School of Computer Science. You can download my <a href="/assets/pdf/Yuyang_Wang_CV.pdf">CV</a> (last updated October 2022).
 
 <b>Research Interest: </b>
 - Machine Learning
-- Graph Representation Learning
+- Self-supervised Learning
 - Molecular Modeling
 - Drug Discovery
 - Computational Material
