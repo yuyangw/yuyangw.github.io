@@ -31,23 +31,13 @@
   abbr={2022IL},
   title={Predicting CO<sub>2</sub> Absorption in Ionic Liquids with Molecular Descriptors and Explainable Graph Neural Networks},
   author={Jian, Yue and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Farimani, Amir Barati},
-  journal={arXiv preprint},
+  journal={ACS Sustainable Chemistry & Engineering},
   year={2022},
+  html={},
   arxiv={https://arxiv.org/abs/2210.01120},
   pdf={https://arxiv.org/pdf/2210.01120.pdf},
   code={https://github.com/ftyuejian/Predicting-CO2-Absorption-in-Ionic-Liquid-with-Molecular-Descriptors-and-Explainable-GNN},
   abstract={Ionic Liquids (ILs) provide a promising solution for CO2 capture and storage to mitigate global warming. However, identifying and designing the high-capacity IL from the giant chemical space requires expensive, and exhaustive simulations and experiments. Machine learning (ML) can accelerate the process of searching for desirable ionic molecules through accurate and efficient property predictions in a data-driven manner. But existing descriptors and ML models for the ionic molecule suffer from the inefficient adaptation of molecular graph structure. Besides, few works have investigated the explainability of ML models to help understand the learned features that can guide the design of efficient ionic molecules. In this work, we develop both fingerprint-based ML models and Graph Neural Networks (GNNs) to predict the CO2 absorption in ILs. Fingerprint works on graph structure at the feature extraction stage, while GNNs directly handle molecule structure in both the feature extraction and model prediction stage. We show that our method outperforms previous ML models by reaching a high accuracy (MAE of 0.0137, R2 of 0.9884). Furthermore, we take the advantage of GNNs feature representation and develop a substructure-based explanation method that provides insight into how each chemical fragments within IL molecules contribute to the CO2 absorption prediction of ML models. We also show that our explanation result agrees with some ground truth from the theoretical reaction mechanism of CO2 absorption in ILs, which can advise on the design of novel and efficient functional ILs in the future.}
-}
-
-@article{wang2022GNN,
-  abbr={2022GNN},
-  title={Graph Neural Networks for Molecules},
-  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Li, Zijie and Farimani, Amir Barati},
-  journal={A chapter for book "Machine Learning in Molecular Sciences" (Editor: Dr. Jerzy Leszczynski) to be published by Springer Nature.},
-  year={2022},
-  arxiv={2209.05582},
-  pdf={https://arxiv.org/pdf/2209.05582.pdf},
-  abstract={Graph neural networks (GNNs), which are capable of learning representations from graphical data, are naturally suitable for modeling molecular systems. This review introduces GNNs and their various applications for small organic molecules. GNNs rely on message-passing operations, a generic yet powerful framework, to update node features iteratively. Many researches design GNN architectures to effectively learn topological information of 2D molecule graphs as well as geometric information of 3D molecular systems. GNNs have been implemented in a wide variety of molecular applications, including molecular property prediction, molecular scoring and docking, molecular optimization and de novo generation, molecular dynamics simulation, etc. Besides, the review also summarizes the recent development of self-supervised learning for molecules with GNNs.}
 }
 
 @article{magar2022crystal,
@@ -62,6 +52,17 @@
   code={https://github.com/RishikeshMagar/Crystal-Twins},
   abstract={Machine learning (ML) models have been widely successful in the prediction of material properties. However, large labeled datasets required for training accurate ML models are elusive and computationally expensive to generate. Recent advances in Self-Supervised Learning (SSL) frameworks capable of training ML models on unlabeled data have mitigated this problem and demonstrated superior performance in computer vision and natural language processing tasks. Drawing inspiration from the developments in SSL, we introduce Crystal Twins (CT): an SSL method for crystalline materials property prediction. Using a large unlabeled dataset, we pre-train a Graph Neural Network (GNN) by applying the redundancy reduction principle to the graph latent embeddings of augmented instances obtained from the same crystalline system. By sharing the pre-trained weights when fine-tuning the GNN for regression tasks, we significantly improve the performance for 7 challenging material property prediction benchmarks.}
   }
+
+@article{wang2022GNN,
+  abbr={2022GNN},
+  title={Graph Neural Networks for Molecules},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Li, Zijie and Farimani, Amir Barati},
+  journal={A chapter for book "Machine Learning in Molecular Sciences" (Editor: Dr. Jerzy Leszczynski) to be published by Springer Nature},
+  year={2022},
+  arxiv={2209.05582},
+  pdf={https://arxiv.org/pdf/2209.05582.pdf},
+  abstract={Graph neural networks (GNNs), which are capable of learning representations from graphical data, are naturally suitable for modeling molecular systems. This review introduces GNNs and their various applications for small organic molecules. GNNs rely on message-passing operations, a generic yet powerful framework, to update node features iteratively. Many researches design GNN architectures to effectively learn topological information of 2D molecule graphs as well as geometric information of 3D molecular systems. GNNs have been implemented in a wide variety of molecular applications, including molecular property prediction, molecular scoring and docking, molecular optimization and de novo generation, molecular dynamics simulation, etc. Besides, the review also summarizes the recent development of self-supervised learning for molecules with GNNs.}
+}
 
 @article{wang2022improving,
   abbr={2022imolclr},

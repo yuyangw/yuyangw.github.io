@@ -3,7 +3,6 @@ layout: about
 title: About
 permalink: /
 description: <b>PhD@CMU • AI4Sicence • Molecular Machine Learning 
-# | <a href="mailto:yuyangw@cmu.edu">yuyangw@cmu.edu</a>
 
 profile:
   align: right
@@ -31,4 +30,6 @@ I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/"
 - Drug Discovery
 - Computational Material
 
-My research lies at the intersection of machine learning, molecular modeling, and computational chemistry/material. I am especially interested in developing self-supervised molecular machine learning methods to learn generic graph representations that generalize on chemical space. I believe data-driven techniques bear promise for efficient <i>in silico</i> molecule design and discovery. 
+My research lies at the intersection of machine learning, molecular modeling, and computational chemistry/material. I am especially interested in developing self-supervised molecular machine learning methods to learn generic representations that generalize on chemical space. I believe data-driven techniques bear promise for efficient <i>in silico</i> compound design and discovery. 
+
+<!-- Email: <a href="mailto:yuyangw@cmu.edu">yuyangw@cmu.edu</a> -->
