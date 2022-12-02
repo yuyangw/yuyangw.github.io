@@ -16,8 +16,10 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-    - name: Setup Ruby
-      uses: actions/setup-ruby@v1
+    # - name: Setup Ruby
+    #   uses: actions/setup-ruby@v1
+    - name: Setup Ruby, JRuby and TruffleRuby
+      uses: ruby/setup-ruby@v1.126.0
       with:
         # ruby-version: '3.0.2'
         ruby-version: '2.6.x'
