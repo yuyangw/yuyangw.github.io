@@ -19,7 +19,7 @@ social: true  # includes social icons at the bottom of the page
 order: 1
 ---
 
-I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> working on Molecular Machine Learning. Previously, I obtained M.S. in Machine Learning from CMU School of Computer Science. You can download my <a href="/assets/pdf/Yuyang_Wang_CV.pdf">CV</a> (last updated November 2022).
+I am a Ph.D. student in Mechanical Engineering at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> working on Molecular Machine Learning. Previously, I obtained M.S. in Machine Learning from CMU School of Computer Science. You can download my <a href="/assets/pdf/Yuyang_Wang_CV.pdf">CV</a> (last updated April 2023).
 
 <b>Research Interest: </b>
 - Machine Learning
