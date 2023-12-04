@@ -19,6 +19,6 @@ social: true  # includes social icons at the bottom of the page
 order: 1
 ---
 
-I am an AI/ML resident at [Apple Machine Learning Research (MLR)](https://machinelearning.apple.com/). Currenly I am working on building domain-agnostic generative models as well as implmentations of such models to scientific problems. 
+I am an AI/ML resident at [Apple Machine Learning Research (MLR)](https://machinelearning.apple.com/). Currenly I am working on building domain-agnostic generative models as well as applying such generative models to scientific problems. 
 
 Previously I obtain Ph.D. from Carnegie Mellon University working at the intersectio of machine learning, molecular modeling, and chemical physics/biophysics. Especially, I developed self-supervised learning methods to learn generic molecular representations that generalize on chemical space. 
