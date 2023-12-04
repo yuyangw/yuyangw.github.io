@@ -3,24 +3,47 @@
 
 @string{acs = {Americam Chemical Society,}}
 
+@article{wang2023generating,
+  abbr={2023mcf},
+  title={Generating Molecular Conformer Fields},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Ahmed Elhag and Navdeep Jaitly and Joshua Susskind and Miguel Angel Bautista},
+  journal={GenBio Workshop at NeurIPS},
+  year={2023},
+  arxiv={2311.17932},
+  pdf={https://arxiv.org/pdf/2311.17932.pdf},
+  abstract={In this paper we tackle the problem of generating conformers of a molecule in 3D space given its molecular graph. We parameterize these conformers as continuous functions that map elements from the molecular graph to points in 3D space. We then formulate the problem of learning to generate conformers as learning a distribution over these functions using a diffusion generative model, called Molecular Conformer Fields (MCF). Our approach is simple and scalable, and achieves state-of-the-art performance on challenging molecular conformer generation benchmarks while making no assumptions about the explicit structure of molecules (e.g. modeling torsional angles). MCF represents an advance in extending diffusion models to handle complex scientific problems in a conceptually simple, scalable and effective manner.}
+}
+
+@article{elhag2023manifold,
+  abbr={2023mdf},
+  title={Manifold Diffusion Fields},
+  author={Elhag, Ahmed A and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Susskind, Joshua M and Bautista, Miguel Angel},
+  journal={Diffusion Models Workshop at NeurIPS},
+  year={2023},
+  pdf={https://openreview.net/pdf?id=0AMMdKcuae},
+  abstract={We present Manifold Diffusion Fields (MDF), an approach that unlocks learning of diffusion models of data in general non-Euclidean geometries. Leveraging insights from spectral geometry analysis, we define an intrinsic coordinate system on the manifold via the eigen-functions of the Laplace-Beltrami Operator. MDF represents functions using an explicit parametrization formed by a set of multiple input-output pairs. Empirical results on multiple datasets and manifolds including challenging scientific problems like weather prediction or molecular conformation show that MDF can capture distributions of such functions with better diversity and fidelity than previous approaches.}
+}
+
 @article{wang2023denoise,
   abbr={2023denoise},
-  title={Denoise Pre-training on Non-equilibrium Molecules for Accurate and Transferable Neural Potentials},
+  title={Denoise Pretraining on Nonequilibrium Molecules for Accurate and Transferable Neural Potentials},
   author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Xu, Changwen and Li, Zijie and Barati Farimani, Amir},
-  journal={arXiv preprint},
+  journal={Journal of Chemical Theory and Computation},
   year={2023},
+  html={https://pubs.acs.org/doi/10.1021/acs.jctc.3c00289},
   arxiv={2303.02216},
-  pdf={https://arxiv.org/pdf/2303.02216.pdf},
+  pdf={https://pubs.acs.org/doi/epdf/10.1021/acs.jctc.3c00289},
   code={https://github.com/yuyangw/Denoise-Pretrain-ML-Potential}, 
-  abstract={Machine learning methods, particularly recent advances in equivariant graph neural networks (GNNs), have been investigated as surrogate models to expensive ab initio quantum mechanics (QM) approaches for molecular potential predictions. However, building accurate and transferable potential models using GNNs remains challenging, as the quality and quantity of data are greatly limited by QM calculations, especially for large and complex molecular systems. In this work, we propose denoise pre-training on non-equilibrium molecular conformations to achieve more accurate and transferable GNN potential predictions. Specifically, GNNs are pre-trained by predicting the random noises added to atomic coordinates of sampled non-equilibrium conformations. Rigorous experiments on multiple benchmarks reveal that pre-training significantly improves the accuracy of neural potentials. Furthermore, we show that the proposed pre-training approach is model-agnostic, as it improves the performance of different invariant and equivariant GNNs. Notably, our models pre-trained on small molecules demonstrate remarkable transferability, improving performance when fine-tuned on diverse molecular systems, including different elements, charged molecules, biomolecules, and larger systems. These results highlight the potential for leveraging denoise pre-training approaches to build more generalizable neural potentials for complex molecular systems.}
+  abstract={Recent advances in equivariant graph neural networks (GNNs) have made deep learning amenable to developing fast surrogate models to expensive ab initio quantum mechanics (QM) approaches for molecular potential predictions. However, building accurate and transferable potential models using GNNs remains challenging, as the data is greatly limited by the expensive computational costs and level of theory of QM methods, especially for large and complex molecular systems. In this work, we propose denoise pretraining on nonequilibrium molecular conformations to achieve more accurate and transferable GNN potential predictions. Specifically, atomic coordinates of sampled nonequilibrium conformations are perturbed by random noises and GNNs are pretrained to denoise the perturbed molecular conformations which recovers the original coordinates. Rigorous experiments on multiple benchmarks reveal that pretraining significantly improves the accuracy of neural potentials. Furthermore, we show that the proposed pretraining approach is model-agnostic, as it improves the performance of different invariant and equivariant GNNs. Notably, our models pretrained on small molecules demonstrate remarkable transferability, improving performance when fine-tuned on diverse molecular systems, including different elements, charged molecules, biomolecules, and larger systems. These results highlight the potential for leveraging denoise pretraining approaches to build more generalizable neural potentials for complex molecular systems.}
 }
 
 @article{cao2023neural,
   abbr={2023neural},
   title={Neural Network Predicts Ion Concentration Profiles under Nanoconfinement},
   author={Cao, Zhonglin and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Lorsung, Cooper and Barati Farimani, Amir},
-  journal={arXiv preprint},
+  journal={Journal of Chemical Physics},
   year={2023},
+  html={https://pubs.aip.org/aip/jcp/article-abstract/159/9/094702/2908717/Neural-network-predicts-ion-concentration-profiles?redirectedFrom=fulltext},
   arxiv={2304.04896},
   pdf={https://arxiv.org/pdf/2304.04896.pdf},
   code={https://github.com/zcao0420/IonNet},
@@ -57,6 +80,18 @@
   abstract = {Metal–organic frameworks (MOFs) are materials with a high degree of porosity that can be used for many applications. However, the chemical space of MOFs is enormous due to the large variety of possible combinations of building blocks and topology. Discovering the optimal MOFs for specific applications requires an efficient and accurate search over countless potential candidates. Previous high-throughput screening methods using computational simulations like DFT can be time-consuming. Such methods also require the 3D atomic structures of MOFs, which adds one extra step when evaluating hypothetical MOFs. In this work, we propose a structure-agnostic deep learning method based on the Transformer model, named as MOFormer, for property predictions of MOFs. MOFormer takes a text string representation of MOF (MOFid) as input, thus circumventing the need of obtaining the 3D structure of a hypothetical MOF and accelerating the screening process. By comparing to other descriptors such as Stoichiometric-120 and revised autocorrelations, we demonstrate that MOFormer can achieve state-of-the-art structure-agnostic prediction accuracy on all benchmarks. Furthermore, we introduce a self-supervised learning framework that pretrains the MOFormer via maximizing the cross-correlation between its structure-agnostic representations and structure-based representations of the crystal graph convolutional neural network (CGCNN) on >400k publicly available MOF data. Benchmarks show that pretraining improves the prediction accuracy of both models on various downstream prediction tasks. Furthermore, we revealed that MOFormer can be more data-efficient on quantum-chemical property prediction than structure-based CGCNN when training data is limited. Overall, MOFormer provides a novel perspective on efficient MOF property prediction using deep learning.}
 }
 
+@article{wang2022GNN,
+  abbr={2022GNN},
+  title={Graph Neural Networks for Molecules},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Li, Zijie and Barati Farimani, Amir},
+  journal={A chapter for book "Machine Learning in Molecular Sciences" (Editor: Dr. Jerzy Leszczynski) published by Springer Nature},
+  year={2023},
+  html={https://link.springer.com/chapter/10.1007/978-3-031-37196-7_2},
+  arxiv={2209.05582},
+  pdf={https://arxiv.org/pdf/2209.05582.pdf},
+  abstract={Graph neural networks (GNNs), which are capable of learning representations from graphical data, are naturally suitable for modeling molecular systems. This review introduces GNNs and their various applications for small organic molecules. GNNs rely on message-passing operations, a generic yet powerful framework, to update node features iteratively. Many researches design GNN architectures to effectively learn topological information of 2D molecule graphs as well as geometric information of 3D molecular systems. GNNs have been implemented in a wide variety of molecular applications, including molecular property prediction, molecular scoring and docking, molecular optimization and de novo generation, molecular dynamics simulation, etc. Besides, the review also summarizes the recent development of self-supervised learning for molecules with GNNs.}
+}
+
 @article{jian2022predicting,
   abbr={2022IL},
   title={Predicting CO<sub>2</sub> Absorption in Ionic Liquids with Molecular Descriptors and Explainable Graph Neural Networks},
@@ -82,17 +117,6 @@
   code={https://github.com/RishikeshMagar/Crystal-Twins},
   abstract={Machine learning (ML) models have been widely successful in the prediction of material properties. However, large labeled datasets required for training accurate ML models are elusive and computationally expensive to generate. Recent advances in Self-Supervised Learning (SSL) frameworks capable of training ML models on unlabeled data have mitigated this problem and demonstrated superior performance in computer vision and natural language processing tasks. Drawing inspiration from the developments in SSL, we introduce Crystal Twins (CT): an SSL method for crystalline materials property prediction. Using a large unlabeled dataset, we pre-train a Graph Neural Network (GNN) by applying the redundancy reduction principle to the graph latent embeddings of augmented instances obtained from the same crystalline system. By sharing the pre-trained weights when fine-tuning the GNN for regression tasks, we significantly improve the performance for 7 challenging material property prediction benchmarks.}
   }
-
-@article{wang2022GNN,
-  abbr={2022GNN},
-  title={Graph Neural Networks for Molecules},
-  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Li, Zijie and Barati Farimani, Amir},
-  journal={A chapter for book "Machine Learning in Molecular Sciences" (Editor: Dr. Jerzy Leszczynski) to be published by Springer Nature},
-  year={2022},
-  arxiv={2209.05582},
-  pdf={https://arxiv.org/pdf/2209.05582.pdf},
-  abstract={Graph neural networks (GNNs), which are capable of learning representations from graphical data, are naturally suitable for modeling molecular systems. This review introduces GNNs and their various applications for small organic molecules. GNNs rely on message-passing operations, a generic yet powerful framework, to update node features iteratively. Many researches design GNN architectures to effectively learn topological information of 2D molecule graphs as well as geometric information of 3D molecular systems. GNNs have been implemented in a wide variety of molecular applications, including molecular property prediction, molecular scoring and docking, molecular optimization and de novo generation, molecular dynamics simulation, etc. Besides, the review also summarizes the recent development of self-supervised learning for molecules with GNNs.}
-}
 
 @article{wang2022improving,
   abbr={2022imolclr},
