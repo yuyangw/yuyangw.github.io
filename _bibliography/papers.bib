@@ -3,6 +3,30 @@
 
 @string{acs = {Americam Chemical Society,}}
 
+@article{wang2024coordinate,
+  preview={2024asft.png},
+  title={Coordinate In and Value Out: Training Flow Transformers in Ambient Space},
+  author={Wang, Yuyang and Ranjan, Anurag and Susskind, Josh and Bautista, Miguel Angel},
+  journal={arXiv preprint arXiv:2412.03791},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2412.03791.pdf},
+  arxiv={2412.03791},
+  html={https://arxiv.org/abs/2412.03791},
+  abstract={Flow matching models have emerged as a powerful method for generative modeling on domains like images or videos, and even on unstructured data like 3D point clouds. These models are commonly trained in two stages: first, a data compressor (i.e., a variational auto-encoder) is trained, and in a subsequent training stage a flow matching generative model is trained in the low-dimensional latent space of the data compressor. This two stage paradigm adds complexity to the overall training recipe and sets obstacles for unifying models across data domains, as specific data compressors are used for different data modalities. To this end, we introduce Ambient Space Flow Transformers (ASFT), a domain-agnostic approach to learn flow matching transformers in ambient space, sidestepping the requirement of training compressors and simplifying the training process. We introduce a conditionally independent point-wise training objective that enables ASFT to make predictions continuously in coordinate space. Our empirical results demonstrate that using general purpose transformer blocks, ASFT effectively handles different data modalities such as images and 3D point clouds, achieving strong performance in both domains and outperforming comparable approaches. ASFT is a promising step towards domain-agnostic flow matching generative models that can be trivially adopted in different data domains.}
+}
+
+@article{gu2024dart,
+  preview={2024dart.png},
+  title={Dart: Denoising autoregressive transformer for scalable text-to-image generation},
+  author={Gu, Jiatao and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Zhang, Yizhe and Zhang, Qihang and Zhang, Dinghuai and Jaitly, Navdeep and Susskind, Josh and Zhai, Shuangfei},
+  journal={arXiv preprint arXiv:2410.08159},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2410.08159.pdf},
+  arxiv={2410.08159},
+  html={https://arxiv.org/abs/2410.08159},
+  abstract={Diffusion models have become the dominant approach for visual generation. They are trained by denoising a Markovian process that gradually adds noise to the input. We argue that the Markovian property limits the models ability to fully utilize the generation trajectory, leading to inefficiencies during training and inference. In this paper, we propose DART, a transformer-based model that unifies autoregressive (AR) and diffusion within a non-Markovian framework. DART iteratively denoises image patches spatially and spectrally using an AR model with the same architecture as standard language models. DART does not rely on image quantization, enabling more effective image modeling while maintaining flexibility. Furthermore, DART seamlessly trains with both text and image data in a unified model. Our approach demonstrates competitive performance on class-conditioned and text-to-image generation tasks, offering a scalable, efficient alternative to traditional diffusion models. Through this unified framework, DART sets a new benchmark for scalable, high-quality image synthesis.}
+}
+
 @article{wang2024mcf,
   preview={2024swallow.gif},
   title={Swallowing the Bitter Pill: Simplified Scalable Conformer Generation},
