@@ -3,6 +3,56 @@
 
 @string{acs = {Americam Chemical Society,}}
 
+@article{wang2025simplefold,
+  preview={2025simplefold.png},
+  title={SimpleFold: Folding Proteins is Simpler than You Think},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Lu, Jiarui and Jaitly, Navdeep and Susskind, Josh and Bautista, Miguel Angel},
+  journal={arXiv preprint arXiv:2509.18480},
+  year={2025},
+  pdf={https://arxiv.org/pdf/2509.18480.pdf},
+  arxiv={2509.18480},
+  html={https://arxiv.org/abs/2509.18480},
+  code={https://github.com/apple/ml-simplefold},
+  abstract={Protein folding models have achieved groundbreaking results typically via a combination of integrating domain knowledge into the architectural blocks and training pipelines. Nonetheless, given the success of generative models across different but related problems, it is natural to question whether these architectural designs are a necessary condition to build performant models. In this paper, we introduce SimpleFold, the first flow-matching based protein folding model that solely uses general purpose transformer blocks. Protein folding models typically employ computationally expensive modules involving triangular updates, explicit pair representations or multiple training objectives curated for this specific domain. Instead, SimpleFold employs standard transformer blocks with adaptive layers and is trained via a generative flow-matching objective with an additional structural term. We scale SimpleFold to 3B parameters and train it on approximately 9M distilled protein structures together with experimental PDB data. On standard folding benchmarks, SimpleFold-3B achieves competitive performance compared to state-of-the-art baselines, in addition SimpleFold demonstrates strong performance in ensemble prediction which is typically difficult for models trained via deterministic reconstruction objectives. Due to its general-purpose architecture, SimpleFold shows efficiency in deployment and inference on consumer-level hardware. SimpleFold challenges the reliance on complex domain-specific architectures designs in protein folding, opening up an alternative design space for future progress.},
+}
+
+@article{gu2025starflow,
+  preview={2025starflow.png},
+  title={STARFlow: Scaling Latent Normalizing Flows for High-resolution Image Synthesis},
+  author={Gu, Jiatao and Chen, Tianrong and Berthelot, David and Zheng, Huangjie and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Zhang, Ruixiang and Dinh, Laurent and Bautista, Miguel Angel and Susskind, Josh and Zhai, Shuangfei},
+  journal={arXiv preprint arXiv:2506.06276},
+  year={2025},
+  pdf={https://arxiv.org/pdf/2506.06276.pdf},
+  arxiv={2506.06276},
+  html={https://arxiv.org/abs/2506.06276},
+  abstract={We present STARFlow, a scalable generative model based on normalizing flows that achieves strong performance in high-resolution image synthesis. The core of STARFlow is Transformer Autoregressive Flow (TARFlow), which combines the expressive power of normalizing flows with the structured modeling capabilities of Autoregressive Transformers. We first establish the theoretical universality of TARFlow for modeling continuous distributions. Building on this foundation, we introduce several key architectural and algorithmic innovations to significantly enhance scalability: (1) a deep-shallow design, wherein a deep Transformer block captures most of the model representational capacity, complemented by a few shallow Transformer blocks that are computationally efficient yet substantially beneficial; (2) modeling in the latent space of pretrained autoencoders, which proves more effective than direct pixel-level modeling; and (3) a novel guidance algorithm that significantly boosts sample quality. Crucially, our model remains an end-to-end normalizing flow, enabling exact maximum likelihood training in continuous spaces without discretization. STARFlow achieves competitive performance in both class-conditional and text-conditional image generation tasks, approaching state-of-the-art diffusion models in sample quality. To our knowledge, this work is the first successful demonstration of normalizing flows operating effectively at this scale and resolution.},
+}
+
+@article{wang2024coordinate,
+  preview={2024asft.png},
+  title={INRFlow: Flow Matching for INRs in Ambient Space},
+  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Ranjan, Anurag and Susskind, Josh and Bautista, Miguel Angel},
+  journal={The International Conference on Machine Learning (ICML)},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2412.03791.pdf},
+  arxiv={2412.03791},
+  html={https://arxiv.org/abs/2412.03791},
+  code={https://github.com/apple/ml-inrflow},
+  abstract={Flow matching models have emerged as a powerful method for generative modeling on domains like images or videos, and even on irregular or unstructured data like 3D point clouds or even protein structures. These models are commonly trained in two stages: first, a data compressor is trained, and in a subsequent training stage a flow matching generative model is trained in the latent space of the data compressor. This two-stage paradigm sets obstacles for unifying models across data domains, as hand-crafted compressors architectures are used for different data modalities. To this end, we introduce INRFlow, a domain-agnostic approach to learn flow matching transformers directly in ambient space. Drawing inspiration from INRs, we introduce a conditionally independent point-wise training objective that enables INRFlow to make predictions continuously in coordinate space. Our empirical results demonstrate that INRFlow effectively handles different data modalities such as images, 3D point clouds and protein structure data, achieving strong performance in different domains and outperforming comparable approaches. INRFlow is a promising step towards domain-agnostic flow matching generative models that can be trivially adopted in different data domains.},
+}
+
+@article{gu2024dart,
+  preview={2024dart.png},
+  title={DART: Denoising autoregressive transformer for scalable text-to-image generation},
+  author={Gu, Jiatao and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Zhang, Yizhe and Zhang, Qihang and Zhang, Dinghuai and Jaitly, Navdeep and Susskind, Josh and Zhai, Shuangfei},
+  journal={International Conference on Learning Representations (ICLR)},
+  year={2024},
+  pdf={https://arxiv.org/pdf/2410.08159.pdf},
+  arxiv={2410.08159},
+  html={https://arxiv.org/abs/2410.08159},
+  abstract={Diffusion models have become the dominant approach for visual generation. They are trained by denoising a Markovian process that gradually adds noise to the input. We argue that the Markovian property limits the models ability to fully utilize the generation trajectory, leading to inefficiencies during training and inference. In this paper, we propose DART, a transformer-based model that unifies autoregressive (AR) and diffusion within a non-Markovian framework. DART iteratively denoises image patches spatially and spectrally using an AR model with the same architecture as standard language models. DART does not rely on image quantization, enabling more effective image modeling while maintaining flexibility. Furthermore, DART seamlessly trains with both text and image data in a unified model. Our approach demonstrates competitive performance on class-conditioned and text-to-image generation tasks, offering a scalable, efficient alternative to traditional diffusion models. Through this unified framework, DART sets a new benchmark for scalable, high-quality image synthesis.}
+}
+
 @article{chang20243d,
   preview={2024shapetoken.png},
   title={3D Shape Tokenization},
@@ -15,30 +65,6 @@
   abstract={We introduce Shape Tokens, a 3D representation that is continuous, compact, and easy to incorporate into machine learning models. Shape Tokens act as conditioning vectors that represent shape information in a 3D flow-matching model. The flow-matching model is trained to approximate probability density functions corresponding to delta functions concentrated on the surfaces of shapes in 3D. By attaching Shape Tokens to various machine learning models, we can generate new shapes, convert images to 3D, align 3D shapes with text and images, and render shapes directly at variable, user specified, resolution. Moreover, Shape Tokens enable a systematic analysis of geometric properties such as normal, density, and deformation field. Across all tasks and experiments, utilizing Shape Tokens demonstrate strong performance compared to existing baselines.},
 }
 
-@article{wang2024coordinate,
-  preview={2024asft.png},
-  title={Coordinate In and Value Out: Training Flow Transformers in Ambient Space},
-  author={<b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Ranjan, Anurag and Susskind, Josh and Bautista, Miguel Angel},
-  journal={arXiv preprint arXiv:2412.03791},
-  year={2024},
-  pdf={https://arxiv.org/pdf/2412.03791.pdf},
-  arxiv={2412.03791},
-  html={https://arxiv.org/abs/2412.03791},
-  abstract={Flow matching models have emerged as a powerful method for generative modeling on domains like images or videos, and even on unstructured data like 3D point clouds. These models are commonly trained in two stages: first, a data compressor (i.e., a variational auto-encoder) is trained, and in a subsequent training stage a flow matching generative model is trained in the low-dimensional latent space of the data compressor. This two stage paradigm adds complexity to the overall training recipe and sets obstacles for unifying models across data domains, as specific data compressors are used for different data modalities. To this end, we introduce Ambient Space Flow Transformers (ASFT), a domain-agnostic approach to learn flow matching transformers in ambient space, sidestepping the requirement of training compressors and simplifying the training process. We introduce a conditionally independent point-wise training objective that enables ASFT to make predictions continuously in coordinate space. Our empirical results demonstrate that using general purpose transformer blocks, ASFT effectively handles different data modalities such as images and 3D point clouds, achieving strong performance in both domains and outperforming comparable approaches. ASFT is a promising step towards domain-agnostic flow matching generative models that can be trivially adopted in different data domains.}
-}
-
-@article{gu2024dart,
-  preview={2024dart.png},
-  title={DART: Denoising autoregressive transformer for scalable text-to-image generation},
-  author={Gu, Jiatao and <b><i>Wang</i></b>, <b><i>Yuyang</i></b> and Zhang, Yizhe and Zhang, Qihang and Zhang, Dinghuai and Jaitly, Navdeep and Susskind, Josh and Zhai, Shuangfei},
-  journal={arXiv preprint arXiv:2410.08159},
-  year={2024},
-  pdf={https://arxiv.org/pdf/2410.08159.pdf},
-  arxiv={2410.08159},
-  html={https://arxiv.org/abs/2410.08159},
-  abstract={Diffusion models have become the dominant approach for visual generation. They are trained by denoising a Markovian process that gradually adds noise to the input. We argue that the Markovian property limits the models ability to fully utilize the generation trajectory, leading to inefficiencies during training and inference. In this paper, we propose DART, a transformer-based model that unifies autoregressive (AR) and diffusion within a non-Markovian framework. DART iteratively denoises image patches spatially and spectrally using an AR model with the same architecture as standard language models. DART does not rely on image quantization, enabling more effective image modeling while maintaining flexibility. Furthermore, DART seamlessly trains with both text and image data in a unified model. Our approach demonstrates competitive performance on class-conditioned and text-to-image generation tasks, offering a scalable, efficient alternative to traditional diffusion models. Through this unified framework, DART sets a new benchmark for scalable, high-quality image synthesis.}
-}
-
 @article{wang2024mcf,
   preview={2024swallow.gif},
   title={Swallowing the Bitter Pill: Simplified Scalable Conformer Generation},
@@ -48,6 +74,7 @@
   arxiv={2311.17932},
   pdf={https://arxiv.org/pdf/2311.17932.pdf},
   html={https://arxiv.org/abs/2311.17932},
+  code={https://github.com/apple/ml-mcf},
   abstract={We present a novel way to predict molecular conformers through a simple formulation that sidesteps many of the heuristics of prior works and achieves state of the art results by using the advantages of scale. By training a diffusion generative model directly on 3D atomic positions without making assumptions about the explicit structure of molecules (e.g. modeling torsional angles) we are able to radically simplify structure learning, and make it trivial to scale up the model sizes. This model, called Molecular Conformer Fields (MCF), works by parameterizing conformer structures as functions that map elements from a molecular graph directly to their 3D location in space. This formulation allows us to boil down the essence of structure prediction to learning a distribution over functions. Experimental results show that scaling up the model capacity leads to large gains in generalization performance without enforcing inductive biases like rotational equivariance. MCF represents an advance in extending diffusion models to handle complex scientific problems in a conceptually simple, scalable and effective manner.}
 }
 
